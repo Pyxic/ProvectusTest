@@ -4,16 +4,25 @@
     position: relative
 .hero
     width: 100%
+    display: none
+    @media (min-width:750px)
+        display: block 
     background: #000000 url(../image/8-layers.jpg) repeat-x
     padding-bottom: 480px
     box-shadow: inset 0px 140px 60px rgba(0,0,0,0.3)
 .nav
+    display: flex
+    justify-content: flex-end
+.nav-menu
     width: 630px
     margin: auto
-    display: flex
-    justify-content: space-between
-    align-items: center
-    min-height: 100px
+    display: none
+    min-height: 60px
+    @media (min-width:640px)
+        display: flex
+        justify-content: space-between
+        align-items: center
+        min-height: 100px
 .nav-item
     color: #2e2e2e
     font-size: 20px
@@ -25,10 +34,28 @@
     position: absolute
     top: 15px
     right: 15px
-    display: flex
+    display: none
+    @media  (min-width:750px)
+        display: flex
 .instagram-text
     color: #ffffff
     +proximaBold
     font-size: 15px
     font-weight: 400
     letter-spacing: 0.38px
+.nav-button
+    background-color: transparent
+    border: none
+    height: 60px
+    width: 70px
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    &-line
+        width: 20px
+        height: 3px
+        background-color: #000
+        margin: 2px 0
+    @media (min-width:640px)
+        display: none

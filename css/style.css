@@ -25,25 +25,48 @@ img {
 
 .hero {
   width: 100%;
+  display: none;
   background: #000000 url(../image/8-layers.jpg) repeat-x;
   padding-bottom: 480px;
   -webkit-box-shadow: inset 0px 140px 60px rgba(0, 0, 0, 0.3);
           box-shadow: inset 0px 140px 60px rgba(0, 0, 0, 0.3);
 }
 
+@media (min-width: 750px) {
+  .hero {
+    display: block;
+  }
+}
+
 .nav {
-  width: 630px;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 100px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav-menu {
+  width: 630px;
+  margin: auto;
+  display: none;
+  min-height: 60px;
+}
+
+@media (min-width: 640px) {
+  .nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 100px;
+  }
 }
 
 .nav-item {
@@ -59,9 +82,15 @@ img {
   position: absolute;
   top: 15px;
   right: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+}
+
+@media (min-width: 750px) {
+  .instagram {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .instagram-text {
@@ -70,5 +99,38 @@ img {
   font-size: 15px;
   font-weight: 400;
   letter-spacing: 0.38px;
+}
+
+.nav-button {
+  background-color: transparent;
+  border: none;
+  height: 60px;
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav-button-line {
+  width: 20px;
+  height: 3px;
+  background-color: #000;
+  margin: 2px 0;
+}
+
+@media (min-width: 640px) {
+  .nav-button {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
