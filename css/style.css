@@ -133,4 +133,95 @@ img {
     display: none;
   }
 }
+
+.hotdog {
+  background-color: #fbfafa;
+}
+
+.hotdog-wrapper {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 110px;
+}
+
+@media (min-width: 680px) {
+  .hotdog-wrapper {
+    width: 670px;
+  }
+}
+
+@media (min-width: 855px) {
+  .hotdog-wrapper {
+    width: 845px;
+  }
+}
+
+.hotdog-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hotdog-title h1 {
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: -2.24px;
+  color: #555559;
+  opacity: 0.7;
+}
+
+@media (min-width: 680px) {
+  .hotdog-title h1 {
+    font-size: 34px;
+  }
+}
+
+@media (min-width: 855px) {
+  .hotdog-title h1 {
+    font-size: 56px;
+  }
+}
+
+.moreDogsButton {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+  width: 260px;
+  border: none;
+  border-radius: 6px;
+  background-color: #286782;
+  padding-top: 16px;
+  padding-bottom: 12px;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.moreDogsButton:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+@media (min-width: 680px) {
+  .moreDogsButton {
+    width: 290px;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    margin-top: 70px;
+    margin-bottom: 170p;
+  }
+}
+
+@media (min-width: 855px) {
+  .moreDogsButton {
+    width: 310px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
